@@ -15,6 +15,8 @@ h1 {
   font-family: "Slackey", sans-serif;
 }
 #home {
+  animation-name: load;
+  animation-duration: 0.5s;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,19 +45,32 @@ h1 {
   background-color: #610000;
 }
 .about {
-  background-color: black;
-  padding: 1rem;
-  color: white;
-  height: 70vh;
-  width: 80vw;
-  font-size: 1.3rem;
-  font-family: "VT323", sans-serif;
-  border: 1rem solid gray;
-  border-radius: 10%;
+  background-image: url(https://i.imgur.com/TWxjgI3.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 95vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 1em;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "VT323", sans-serif;
+  width: 60vw;
+  height: 30vh;
+  word-wrap: break-word;
+  overflow: scroll;
+  margin-bottom: 8vh;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
 }
 #follow {
   height: 100vh;
@@ -69,25 +84,148 @@ h1 {
   color: white;
   font-family: "Slackey", sans-serif;
 }
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .button-box {
-  background-color: white;
-  height: 30vh;
-  width: 60vw;
+  height: 20vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 0.5rem solid black;
-  border-radius: 10%;
 }
 #yt-logo {
-  height: 3rem;
-  width: 5rem;
+  height: 4rem;
+  width: 6rem;
+  display: inline;
+  max-width: 100%;
+  height: auto;
+  margin: 5px auto;
 }
 #twitter-logo {
-  height: 3rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
+  display: inline;
+  max-width: 100%;
+  height: auto;
+  margin: 5px auto;
+  border-radius: 50%;
 }
 #insta-logo {
-  height: 3rem;
-  width: 5rem;
+  height: 4rem;
+  width: 6rem;
+  display: inline;
+  max-width: 100%;
+  height: auto;
+  margin: 5px auto;
+}
+#mount {
+  background-color: #610000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+#dpads-logo {
+  animation-name: mount;
+  animation-duration: 2s;
+  position: relative;
+}
+@keyframes mount {
+  0% {
+    height: 5vh;
+    width: 5vh;
+  }
+  100% {
+    height: 50vh;
+    width: 50vh;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 350px) {
+  .about-text {
+    font-size: 0.8rem;
+    width: 70vw;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .about-text {
+    font-size: 0.95rem;
+    height: 45vh;
+    margin-bottom: 13vh;
+    line-height: 1rem;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .about-text {
+    font-size: 1.1rem;
+    height: 45vh;
+    margin-bottom: 13vh;
+    line-height: 1.3rem;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .about-text {
+    font-size: 1.3rem;
+    height: 55vh;
+    margin-bottom: 13vh;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .about-text {
+    font-size: 1.5rem;
+    height: 55vh;
+    margin-bottom: 13vh;
+    width: 65vw;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .about-text {
+    font-size: 1.3rem;
+    height: 55vh;
+    margin-bottom: 13vh;
+    width: 55vw;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .about-text {
+    font-size: 1.1rem;
+    height: 60vh;
+    margin-bottom: 13vh;
+    width: 48vw;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .about-text {
+    font-size: 1.3rem;
+    height: 60vh;
+    margin-bottom: 13vh;
+    width: 40vw;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .about-text {
+    font-size: 1.2rem;
+    height: 60vh;
+    margin-bottom: 13vh;
+    width: 30vw;
+    line-height: 2rem;
+  }
 }

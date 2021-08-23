@@ -5,7 +5,7 @@ export default class Navigation extends Component{
     render(){
         return(
             <div>
-                <Navbar className="nav-color" fixed="top" expand="sm">
+                <Navbar collapseOnSelect className="nav-color" fixed="top" expand="sm">
   <Navbar.Brand href="#home" className="order-sm-0 mx-auto order-1"></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" className="order-sm-1 order-0" />
   <Navbar.Collapse id="basic-navbar-nav">
