@@ -25,13 +25,13 @@ h1 {
   background-color: #610000;
 }
 .twitch-embed {
-  width: 90%;
+  width: 80%;
   height: 55%;
   border: 0.5rem solid black;
   box-shadow: 0 0 0.5rem black, 0 0 1rem black;
 }
 .twitch-chat {
-  width: 90%;
+  width: 80%;
   height: 40%;
   border: 0.5rem solid black;
   box-shadow: 0 0 0.5rem black, 0 0 1rem black;
@@ -97,6 +97,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: rgb(61, 60, 60);
+  border: 1px solid black;
 }
 #yt-logo {
   height: 4rem;

@@ -49,8 +49,8 @@ function Dpads() {
 <section id="about">
 <div className="about">
   <div className="about-text">
-  <p>Chris skyWalker was born on Tatooine and had an early interest in restoring junk droids to help him locate whomp rats to shoot. </p>
-    <p>He actually invented videogaming, but no one believes him. However, the kind being that he is, he still shares his gaming experiences for the world to enjoy. </p>
+  <p>D-PADS 'N DICE was created by Chris Walker in 2019. This Chicagoland-based channel has recently been streaming Sea of Thieves, Phasmaphobia, and Back 4 Blood.</p>
+    <p>Chris has a deep knowledge and passion for the history of videogaming and occasionally streams old-school games for Flashback Friday events. </p>
     <p>Follow D-PADS 'N DICE for fun insight to new games, old games, board games, video games, and everything inbetween.
     </p>
     </div>
