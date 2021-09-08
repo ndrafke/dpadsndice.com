@@ -58,6 +58,7 @@ function Dpads() {
   
 </section>
 <section id="follow">
+  <h3>New stream schedule coming soon!</h3>
 <div className="follow">
   <h3>Follow D-PADS 'N DICE!</h3>
   <div className="button-box">
@@ -68,6 +69,8 @@ function Dpads() {
  
 <a href="https://www.youtube.com/channel/UCzU6xcVBrtoBk0g26K9vH5w?sub_confirmation=1" target="_blank">
 <div><img id="yt-logo" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Emblem.png" alt="youtube logo"></img></div></a>
+<a href="https://www.tiktok.com/@dpadsndice" target="_blank">
+<div><img id="tiktok-logo" src="https://www.pngitem.com/pimgs/m/488-4889569_tiktok-tik-tok-logo-png-transparent-png.png" alt="tiktok logo"></img></div></a>
   </div>
   </div>
 </section>

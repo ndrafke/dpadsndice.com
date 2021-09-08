@@ -125,6 +125,15 @@ h1 {
   height: auto;
   margin: 5px auto;
 }
+#tiktok-logo {
+  height: 4rem;
+  width: 4rem;
+  display: inline;
+  max-width: 100%;
+  height: auto;
+  margin: 5px auto;
+  border-radius: 25%;
+}
 #mount {
   background-color: #610000;
   display: flex;
