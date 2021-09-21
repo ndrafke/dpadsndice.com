@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MountEffect from './components/MountEffect.js';
 import Navigation from './components/Navigation.js';
 import {TwitchPlayer, TwitchChat} from 'react-twitch-embed';
+import {TwitterTimelineEmbed} from 'react-twitter-embed';
+
 
 function Dpads() {
 
@@ -23,7 +25,9 @@ function Dpads() {
      <Navigation />
      <section id="stream">
      <div className="stream d-flex flex-column justify-content-center align-items-center" id="home">
-     <h1>D-Pads 'N Dice</h1>
+     <h2>D-Pads 'N Dice</h2>
+     <div className="home-container">
+       <div className="twitch-container">
     <div className="twitch-embed">
     <TwitchPlayer
         channel="dpadsndice"
@@ -41,8 +45,18 @@ function Dpads() {
   height="100%"
   width="100%"
   />
+  </div>
 </div>
-
+<div className="twitter-embed">
+<TwitterTimelineEmbed
+  sourceType="profile"
+  screenName="dpadsndice"
+  theme="dark"
+  autoHeight="true"
+  transparent
+/> 
+</div>
+</div>
 </div>
 </section>
 
@@ -58,8 +72,8 @@ function Dpads() {
   
 </section>
 <section id="follow">
-  <h3>New stream schedule coming soon!</h3>
-<div className="follow">
+  <h3 style={{textAlign: "center"}}>New stream schedule coming soon!</h3>
+<div className="d-flex flex-column align-items-center justify-content-between">
   <h3>Follow D-PADS 'N DICE!</h3>
   <div className="button-box">
   <a href="https://twitter.com/DpadsnDice?ref_src=twsrc%5Etfw" target="_blank"><img id="twitter-logo" src="https://www.vhv.rs/dpng/d/211-2110922_transparent-background-twitter-logo-hd-png-download.png" alt="twitter logo"></img></a>

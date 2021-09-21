@@ -1,4 +1,4 @@
-h1 {
+h2 {
   color: white;
   font-family: "Slackey", sans-serif;
   text-align: center;
@@ -24,15 +24,41 @@ h1 {
   justify-content: center;
   background-color: #610000;
 }
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 95%;
+}
+.twitch-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
 .twitch-embed {
-  width: 80%;
-  height: 55%;
+  width: 90%;
+  height: 70%;
   border: 0.5rem solid black;
   box-shadow: 0 0 0.5rem black, 0 0 1rem black;
 }
 .twitch-chat {
-  width: 80%;
-  height: 40%;
+  width: 90%;
+  height: 30%;
+  border: 0.5rem solid black;
+  box-shadow: 0 0 0.5rem black, 0 0 1rem black;
+}
+.twitter-embed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
   border: 0.5rem solid black;
   box-shadow: 0 0 0.5rem black, 0 0 1rem black;
 }
@@ -79,20 +105,28 @@ h1 {
   align-items: center;
   justify-content: space-around;
   background-color: #610000;
+  background-image: radial-gradient(
+    circle,
+    #610000,
+    #640000,
+    #670001,
+    #6a0101,
+    #6d0101,
+    #6d0101,
+    #6d0202,
+    #6d0202,
+    #6a0202,
+    #670203,
+    #650303,
+    #620303
+  );
 }
 #follow h3 {
   color: white;
   font-family: "Slackey", sans-serif;
 }
-.follow {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 .button-box {
-  height: 20vh;
+  height: 10vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -101,16 +135,16 @@ h1 {
   border: 1px solid black;
 }
 #yt-logo {
-  height: 4rem;
-  width: 6rem;
+  height: 2rem;
+  width: 3rem;
   display: inline;
   max-width: 100%;
   height: auto;
   margin: 5px auto;
 }
 #twitter-logo {
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   display: inline;
   max-width: 100%;
   height: auto;
@@ -118,16 +152,16 @@ h1 {
   border-radius: 50%;
 }
 #insta-logo {
-  height: 4rem;
-  width: 6rem;
+  height: 2rem;
+  width: 3rem;
   display: inline;
   max-width: 100%;
   height: auto;
   margin: 5px auto;
 }
 #tiktok-logo {
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   display: inline;
   max-width: 100%;
   height: auto;
@@ -151,11 +185,11 @@ h1 {
 @keyframes mount {
   0% {
     height: 5vh;
-    width: 5vh;
+    width: 10vw;
   }
   100% {
     height: 50vh;
-    width: 50vh;
+    width: 100vw;
   }
 }
 @keyframes load {
@@ -238,5 +272,29 @@ h1 {
     margin-bottom: 13vh;
     width: 30vw;
     line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .twitch-container {
+    height: 45%;
+    width: 90%;
+  }
+  .twitch-embed {
+    height: 100%;
+    width: 100%;
+  }
+  .twitch-chat {
+    height: 0;
+    width: 0;
+  }
+  .twitter-embed {
+    height: 50%;
+    width: 90%;
   }
 }
