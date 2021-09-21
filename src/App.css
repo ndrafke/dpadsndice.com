@@ -38,7 +38,7 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 50%;
+  width: 65%;
 }
 .twitch-embed {
   width: 90%;
@@ -58,18 +58,11 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 50%;
+  width: 35%;
   border: 0.5rem solid black;
   box-shadow: 0 0 0.5rem black, 0 0 1rem black;
 }
-#about {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
+
 .about {
   background-image: url(https://i.imgur.com/TWxjgI3.png);
   background-size: contain;
@@ -97,14 +90,6 @@ h2 {
   margin-bottom: 8vh;
   font-size: 0.7rem;
   line-height: 0.9rem;
-}
-#follow {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #610000;
 }
 #follow h3 {
   color: white;

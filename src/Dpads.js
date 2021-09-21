@@ -60,7 +60,7 @@ function Dpads() {
 </div>
 </section>
 
-<section id="about">
+<section id="about" className="d-flex flex-column align-items-center justify-content-center" style={{height: "100vh", backgroundColor: "black"}}>
 <div className="about">
   <div className="about-text">
   <p>D-PADS 'N DICE was created by Chris Walker in 2019. This Chicagoland-based channel has recently been streaming Sea of Thieves, Phasmaphobia, and Back 4 Blood.</p>
@@ -71,7 +71,7 @@ function Dpads() {
   </div>
   
 </section>
-<section id="follow">
+<section id="follow" className="d-flex flex-column align-items-center justify-content-around" style={{height: "100vh", backgroundColor: "#610000"}}>
   <h3 style={{textAlign: "center"}}>New stream schedule coming soon!</h3>
 <div className="d-flex flex-column align-items-center justify-content-between">
   <h3>Follow D-PADS 'N DICE!</h3>
