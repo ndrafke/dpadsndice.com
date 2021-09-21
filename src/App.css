@@ -105,21 +105,6 @@ h2 {
   align-items: center;
   justify-content: space-around;
   background-color: #610000;
-  background-image: radial-gradient(
-    circle,
-    #610000,
-    #640000,
-    #670001,
-    #6a0101,
-    #6d0101,
-    #6d0101,
-    #6d0202,
-    #6d0202,
-    #6a0202,
-    #670203,
-    #650303,
-    #620303
-  );
 }
 #follow h3 {
   color: white;
@@ -185,11 +170,11 @@ h2 {
 @keyframes mount {
   0% {
     height: 5vh;
-    width: 10vw;
+    width: 5vw;
   }
   100% {
     height: 50vh;
-    width: 100vw;
+    width: 50vw;
   }
 }
 @keyframes load {
