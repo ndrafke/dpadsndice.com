@@ -5,39 +5,31 @@ import {TwitterTimelineEmbed} from 'react-twitter-embed';
 const Home = () => {
 
     return (
-       <section>
-     <div className="stream d-flex flex-column justify-content-center align-items-center" id="home">
+       <section id="home">
+     <div className="home d-flex flex-column justify-content-center align-items-center">
      <h2>D-Pads 'N Dice</h2>
-     <div className="home-container">
-       <div className="twitch-container">
-    <div className="twitch-embed">
-    <TwitchPlayer
+    
+    <div className="twitch-container">
+        <TwitchPlayer
         channel="dpadsndice"
         id="twitch-player-embed"
         theme="dark"
         height="100%"
         width="100%"
         />   
-</div>
-<div className="twitch-chat">
-  <TwitchChat 
-  channel="dpadsndice"
-  id="twitch-chat-embed"
-  theme="dark"
-  height="100%"
-  width="100%"
-  />
-  </div>
-</div>
+    </div>
+    <div className="home-container">
+    
 <div className="twitter-embed">
 <TwitterTimelineEmbed
   sourceType="profile"
   screenName="dpadsndice"
-  theme="dark"
+  theme="light"
   autoHeight="true"
-  transparent
+  options={{border: "1rem solid black"}}
 /> 
 </div>
+
 </div>
 </div>
 </section>
